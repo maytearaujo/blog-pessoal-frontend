@@ -47,11 +47,11 @@ function Cadastro() {
   }
 
   async function cadastrarNovoUsuario(e: FormEvent<HTMLFormElement>){
-    e.preventDefault()
+    e.preventDefault() // Impede que a página seja recarregada automáticamente
 
     if(confirmaSenha === usuario.senha && usuario.senha.length >= 8){
 
-      setIsLoading(true)
+      setIsLoading(true) // Inicializa o loading do botão
 
       try{
         await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuario)
@@ -65,7 +65,7 @@ function Cadastro() {
       setConfirmaSenha('')
     }
 
-    setIsLoading(false)
+    setIsLoading(false) // remove o loading do botão
   }
   
   return (
