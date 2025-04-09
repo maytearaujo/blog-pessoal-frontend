@@ -6,6 +6,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer'
 import Cadastro from './pages/cadastro/Cadastro';
 import Login from './pages/login/Login';
+import ListaTemas from './components/temas/listaTemas/ListaTemas';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/temas" element={<ListaTemas />} />
             </Routes>
           </div>
           <Footer />
