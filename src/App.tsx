@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext';
 
 import Home from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
@@ -9,7 +10,7 @@ import Login from './pages/login/Login';
 function App() {
 
   return (
-    <>
+    <AuthProvider>
       <BrowserRouter>
           <Navbar />
           <div className="min-h-[80vh]">
@@ -22,7 +23,7 @@ function App() {
           </div>
           <Footer />
         </BrowserRouter>
-    </>
+    </AuthProvider>
   )
 }
 
