@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useState } from "react"
 import UsuarioLogin from "../models/UsuarioLogin"
-import { login } from "../service/Service"
+import { login } from "../services/Service"
 
 // Personalizar de acordo com o meu projeto
 interface AuthContextProps {
