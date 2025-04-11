@@ -10,11 +10,11 @@ import ListaTemas from './components/temas/listaTemas/ListaTemas';
 import FormTema from './components/formTema/FormTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
 import ListaPostagens from './components/postagens/listaPostagens/ListaPostagens';
-import FormPostagem from './components/postagens/formPostagem/Formpostagem';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import Perfil from './pages/perfil/Perfil';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import FormPostagem from './components/postagens/formPostagem/FormPostagem';
 
 function App() {
 
