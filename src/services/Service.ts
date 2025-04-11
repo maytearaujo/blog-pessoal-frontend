@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Criando conexão com o backend
 const api = axios.create({
-    baseURL: 'https://blogpessoal-66sc.onrender.com'
+    baseURL: import.meta.env.VITE_API_URL
 })
 
 // Função de cadastro de usuario
