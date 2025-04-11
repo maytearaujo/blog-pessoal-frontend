@@ -3,9 +3,9 @@ import { DNA } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
 import Tema from "../../../models/Tema";
-import CardTemas from "../cardTemas/CardTemas";
 import { buscar } from "../../../services/Service";
 import { ToastAlerta } from "../../../utils/ToastAlerta";
+import CardTemas from "../cardTemas/CardTemas";
 
 function ListaTemas() {
 
